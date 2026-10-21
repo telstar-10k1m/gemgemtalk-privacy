@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>젬젬톡 개인정보처리방침</title>
+<style>
+  :root{--ink:#111;--sub:#5f5a57;--line:#ece7e3;--bg:#faf8f6;--red:#C92A1F}
+  @media (prefers-color-scheme:dark){:root{--ink:#f3f1ef;--sub:#b3aca8;--line:#2c2827;--bg:#141211;--red:#ff8a7e;color-scheme:dark}}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Pretendard,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.7}
+  .wrap{max-width:720px;margin:0 auto;padding:40px 20px 64px}
+  h1{font-size:26px;margin:0 0 4px}
+  .meta{color:var(--sub);font-size:14px;margin-bottom:28px}
+  h2{font-size:18px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+  table{border-collapse:collapse;width:100%;font-size:14px}
+  th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--sub);font-weight:600;white-space:nowrap}
+  .hl{color:var(--red);font-weight:600}
+  ul{padding-left:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>젬젬톡 개인정보처리방침</h1>
+  <div class="meta">시행일 2026년 10월 21일 · 10kM.ai · 사내용 앱</div>
+
+  <p>젬젬톡(GemGemTalk, 패키지 이름 <code>com.msgcast</code>)은 10kM.ai 가 임직원이 쓰도록 만든 안드로이드 앱입니다. 주소록에서 고른 사람에게 이름이 자막으로 들어간 영상 문자(MMS)를 보냅니다. 이 문서는 앱이 어떤 정보를 어디까지 다루는지 설명합니다.</p>
+
+  <h2>1. 앱이 다루는 정보</h2>
+  <table>
+    <tr><th>정보</th><th>어디서</th><th>어떻게 쓰나</th><th>어디에 두나</th></tr>
+    <tr><td>받는 사람 이름·전화번호</td><td>사용자가 주소록에서 고르거나 직접 입력</td><td>영상 자막에 이름을 넣고, 그 번호로 문자를 보냄</td><td><span class="hl">사용자 폰 안에만</span> 저장. 서버로 보내지 않음</td></tr>
+    <tr><td>문자 본문·영상</td><td>사용자가 입력·선택</td><td>문자로 보냄</td><td>폰 안. 「새로 만들기」를 쓸 때만 <b>광고 문구</b>가 서버로 감(이름 자리는 비워서)</td></tr>
+    <tr><td>발송 기록</td><td>앱이 생성</td><td>누구에게 보냈는지 결과 확인(번호는 뒷자리만 표시)</td><td>폰 안. 사용자가 CSV 로 내보낼 수 있음</td></tr>
+  </table>
+
+  <h2>2. 앱이 쓰는 권한</h2>
+  <ul>
+    <li><b>연락처 읽기</b> — 받는 사람을 주소록에서 고르기 위해. 고른 사람만 명단에 들어가며, 주소록 전체를 저장하거나 보내지 않습니다.</li>
+    <li><b>SMS 보내기</b> — 만든 영상을 사용자 본인 회선으로 영상 문자(MMS)로 보내기 위해. 사용자가 「시작」을 누를 때만 보내고, 문자를 읽지 않습니다.</li>
+    <li><b>인터넷</b> — 「새로 만들기」로 영상을 만들 때 10kM.ai 영상 서버와 통신하기 위해.</li>
+    <li><b>알림·포그라운드 서비스</b> — 보내는 동안 진행 상황을 알림으로 보여 주고, 앱을 닫아도 발송을 이어가기 위해.</li>
+  </ul>
+
+  <h2>3. 밖으로 나가는 정보</h2>
+  <p>앱이 외부로 보내는 것은 다음뿐입니다.</p>
+  <ul>
+    <li>10kM.ai 영상 서버로: 「새로 만들기」에 쓴 <b>광고 문구와 만들기 옵션</b>(엔진·비율·길이·목소리). 받는 사람 이름·번호·명단은 보내지 않습니다.</li>
+    <li>이동통신사로: 사용자가 보내기로 한 영상 문자(받는 번호·본문·영상). 일반 문자 발송과 같습니다.</li>
+  </ul>
+  <p>광고·분석 SDK 는 넣지 않았습니다. 사용 기록을 수집하지 않습니다.</p>
+
+  <h2>4. 보관과 삭제</h2>
+  <ul>
+    <li>명단·문자·발송 기록은 폰 안에만 있고, 앱의 「새 캠페인」·「지우기」로 지우거나 앱을 삭제하면 함께 지워집니다.</li>
+    <li>서버에 만든 영상과 광고 문구는 사용자가 앱에서 지우거나 서버 관리자가 정리할 때까지 서버에 남습니다(영상 안에 개인정보는 들어 있지 않습니다).</li>
+  </ul>
+
+  <h2>5. 이용 대상</h2>
+  <p>이 앱은 10kM.ai 임직원 전용이며 스토어에 공개 배포하지 않습니다. 만 14세 미만을 대상으로 하지 않습니다.</p>
+
+  <h2>6. 문의</h2>
+  <p>개인정보 관련 문의: <b>telstar@10k1m.com</b> (10kM.ai)</p>
+  <p class="meta">이 방침이 바뀌면 이 페이지와 앱 안내로 알립니다.</p>
+</div>
+</body>
+</html>
